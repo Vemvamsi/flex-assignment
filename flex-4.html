@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed Navigation Bar and Positioning Elements</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+
+        .nav-links li a:hover {
+            background-color: #555;
+        }
+
+        /* Styles for the parent container */
+        .container {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Styles for the image */
+        .image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            margin: 0;
+        }
+
+        /* Styles for the first paragraph */
+        .text1 {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            margin: 0;
+        }
+
+        /* Styles for the second paragraph */
+        .text2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img src="path/to/your/image.jpg" alt="Image" class="image">
+        <p class="text1">This is the first paragraph of text.</p>
+        <p class="text2">This is the second paragraph of text.</p>
+    </div>
+
+    <!-- Your page content goes here -->
+
+</body>
+</html>
